@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+ <html lang="es">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Productos - Carpintería Tetos</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <script>
+const buscador = document.getElementById("buscar");
+
+buscador.addEventListener("keyup", function() {
+
+    let filtro = buscador.value.toLowerCase();
+
+    let productos = document.querySelectorAll(".producto");
+
+    productos.forEach(function(producto) {
+
+        let texto = producto.textContent.toLowerCase();
+
+        if(texto.includes(filtro)){
+            producto.style.display = "flex";
+        } else {
+            producto.style.display = "none";
+        }
+
+    });
+
+});
+</script>
+ <body>
+     <header>
+        <h1>Carpintería Tetos</h1>
+         <nav>
+             <a href="index.html">Inicio</a>&nbsp;
+             <a href="nosotros.html">Nosotros</a>&nbsp;
+             <a href="productos.html">Productos</a>&nbsp;
+             <a href="servicios.html">Servicios</a>&nbsp;
+             <a href="promociones.html">Promociones</a>&nbsp;
+             <a href="contactanos.html">Contáctanos</a>
+         </nav>
+     </header>
+     <main>
+        <section id="buscador">
+        <input type="text" id="buscar" placeholder="🔍 Buscar producto...">
+    </section>
+         <h1>Nuestros Productos</h1>
+         <h2>"Calidad y diseño en cada proyecto"</h2>
+          <div class="producto">
+        <img src="puerta de madera.png" alt="Puerta de madera">
+        <a href="puerta.html">Puerta de Madera</a>
+        <div class="info">
+            <p>Puertas fabricadas con madera de alta calidad, diseñadas para brindar seguridad, elegancia y durabilidad. Disponibles en diferentes estilos y acabados según las necesidades del cliente</p>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="closet de madera.png" alt="Closet de madera">
+        <a href="closet.html">closet</a>
+        <div class="info">
+            <p>Closets personalizados con amplio espacio de almacenamiento, diseñados para mantener la organización y aprovechar al máximo cada rincón de tu hogar.</p>
+        </div>
+    </div>
+
+<div class="producto">
+    <img src="comedor de madera.webp" alt="Comedor">
+    <a href="comedor.html">Mesa de comedor</a>
+    <div class="info">
+        <p>Mesas de madera resistentes y elegantes, ideales para compartir momentos especiales con familiares y amigos.</p>
+    </div>
+</div>
+
+<div class="producto">
+    <img src="escritorio de madera.webp" alt="Escritorio">
+    <a href="escritorio.html">Escritorio</a>
+    <div class="info">
+        <p>Escritorios prácticos y cómodos para oficinas, áreas de estudio o trabajo en casa, fabricados con materiales de calidad.</p>
+    </div>
+</div>
+
+<div class="producto">
+    <img src="librero de madera.webp" alt="Librero">
+     <a href="librero.html">Librero</a>
+    <div class="info">
+        <p>Libreros diseñados para organizar libros, documentos y objetos decorativos, combinando funcionalidad y estilo.</p>
+    </div>
+</div>
+
+<div class="producto">
+    <img src="cama matrimonial de madera.jpg" alt="Cama">
+    <a href="cama.html">Camas y Cabeceras de Madera</a>
+    <div class="info">
+        <p>Camas de madera sólida con diseños modernos y resistentes que ofrecen comodidad, estabilidad y durabilidad.</p>
+    </div>
+</div>
+
+       <footer>
+    <div class="footer-contenido">
+        <h2>🪵 Carpintería Tetos</h2>
+
+        <p>
+            Expertos en muebles, puertas, cocinas integrales,
+            closets y proyectos personalizados de madera.
+        </p>
+
+        <hr>
+
+        <p>📍 <strong>Dirección:</strong><br>
+         <a href="https://maps.app.goo.gl/6XKmspZuo26rT4em8?g_st=aw">https://maps.app.goo.gl/6XKmspZuo26rT4em8?g_st=aw</a>
+        </p>
+
+        <p>📞 <strong>Teléfonos:</strong><br>
+             <a href="+52 55 1234 5678">+52 55 1234 5678</a><br>
+            <a href="+52 10 1234 4509">+52 10 1234 4509</a>
+        </p>
+
+        <p>📧 <strong>Correo:</strong><br>
+          <a href="carpinteriatetos@gmail.com">carpinteriatetos@gmail.com</a>
+        </p>
+
+        <p>🕒 <strong>Horario:</strong><br>
+            Lunes a Viernes: 8:00 AM - 6:00 PM<br>
+            Sábados: 8:00 AM - 2:00 PM
+        </p>
+
+        <hr>
+
+        <p>
+            Gracias por confiar en nosotros. Transformamos la madera
+            en proyectos únicos con calidad, diseño y durabilidad.
+        </p>
+
+        <p class="copyright">
+            © 2026 Carpintería Tetos | Todos los derechos reservados.
+        </p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
